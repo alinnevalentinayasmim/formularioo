@@ -10,16 +10,16 @@
     <p>digite seu nome:</p>
     <input type="text" name="nome" placeholder="primeiro nome" required>
     <p>coloque seu email</p>
-    <input type="email" name="email" placeholder="Ex:dacunha@gmail.com" value="@escola.pr.gov.br">
+    <input type="email" name="email" placeholder="Ex:dacunha@gmail.com" value="@escola.pr.gov.br" required>
     <p>digite seu numero</p>
-    <input type="number" name="phone" placeholder="(XX) XXXXX-XXXX"> 
+    <input type="number" name="phone" placeholder="(XX) XXXXX-XXXX" required> 
     <p>você sempre morou na regiãol sul do Brasil?</p>
-    <input type="radio" name="work" value="sim" checked> sim
-    <input type="radio" name="work" value="não">não
+    <input type="radio" name="work" value="sim" checked required> sim
+    <input type="radio" name="work" value="não" checked required>não
     <br>
     
     <p>qual o estado que você mora da região sul</p>
-    <select name="estados" id="">
+    <select name="estados" id="" required>
         <option value="1">Rio Grande do Sul</option>
         <option value="2">Santa Catarina</option>
         <option value="3">Paraná</option>
@@ -27,12 +27,12 @@
     </select>
     <br>
     
-    <textarea name="reclamação" id=""></textarea>
+    <textarea name="reclamação" id="" required></textarea>
     
     <br>
     
 
-<input type="checkbox" name="novidades" checked> Aceito receber novidades por email da empresa
+<input type="checkbox" name="novidades" checked> Aceito receber novidades por email da empresa?
 <button type="submit">enviar</button>
 <button type="reset">apagar</button>
 </form> 
